@@ -8,7 +8,7 @@ int rear = -1;
 
 
    //1) INSERT (Enqueue)
-
+  
 int enqueue(int x) {
     if (rear == MAX - 1) {
         printf("Q is FULL!! \n");
@@ -23,7 +23,7 @@ int enqueue(int x) {
 
 
    //2) DELETE (Dequeue)
-   
+
 int dequeue() {
     if (front == -1 || front > rear) {
         printf("Q is EMPTY!! \n");
@@ -58,8 +58,8 @@ void traverse() {
 }
 
 
-  // 4) UPDATE (Change value at a given position)
-   
+   //4) UPDATE (Change value at a given position)
+  
 void update(int position, int newValue) {
     if (front == -1 || front > rear) {
         printf("Q is EMPTY!! Nothing to update \n");
@@ -77,7 +77,7 @@ void update(int position, int newValue) {
 
 
    //MAIN FUNCTION
-
+  
 int main() {
 
     printf(" INSERT OPERATIONS \n");
@@ -99,7 +99,7 @@ int main() {
     dequeue();
     traverse();
 
-    printf("\n INSERT AFTER DELETE\n");
+    printf("\n INSERT AFTER DELETE \n");
     enqueue(60);
     traverse();
 
